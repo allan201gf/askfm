@@ -1,0 +1,40 @@
+<%- include ('./partials/header.ejs') %>
+
+    <body>
+        <section class="section">
+            <div class="main-content">
+                <div class="logo">
+                    <a href="/perguntar">
+                        <h1>AskME</h1>
+                    </a>
+                </div>
+
+
+                <div class="card" id="formulario-pergunta">
+                    <div class="card-title">
+                        <h3>Realizar pergunta</h3>
+                    </div>
+                    <div class="card">
+                        <form method="POST" action="/salvarpergunta">
+                            <label>Título</label>
+                            <input type="text" placeholder="Título" class="form-title" name="titulo">
+                            <br>
+                            <label>Descrição</label>
+                            <textarea placeholder="Descreva sua pergunta aqui" class="form-description" name="descricao"></textarea>
+                            <br>
+                            <div class="card-title">
+                            <button class="button-l">Perguntar</button>
+                        </div>
+                        </form>
+                        <div class="card-title">
+                            <div class="margin">
+                        <a href="/"><button class="button-l">Inicio</button></a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <%- include ('./partials/footer.ejs') %>

@@ -1,0 +1,59 @@
+<%- include ('./partials/header.ejs') %>
+
+    <body>
+        <section class="section">
+            <div class="main-content">
+                <div class="logo">
+                    <a href="/perguntar">
+                        <h1>AskME</h1>
+                    </a>
+                </div>
+                <div class="card">
+
+                    <h1>
+                        <%= pergunta.titulo %>
+                    </h1>
+                    <p class="descricao">
+                        <%= pergunta.descricao %>
+                    </p>
+                    <hr>
+                    <form action="/responder" method="POST">
+                        <h2>Responda</h2>
+                        <textarea placeholder="" class="form-description" name="corpo">
+                    </textarea>
+                        <br>
+                        <input type="hidden" name="pergunta" value="<%= pergunta.id %> ">
+                        <div class="button">
+                            <button type="submit" class="button-l">Responder</button>
+                        </div>
+                    </form>
+                    <div class="button">
+                        <div class="margin">
+                    <a href="/"><button class="button-l">Inicio</button></a>
+                </div>
+                </div>
+                    <h2>Respostas</h2>
+
+                    <% respostas.forEach(resposta=> { %>
+                        <div class="resposta">
+
+
+                            <p>
+                                <%= resposta.corpo %>
+                            </p>
+
+
+                        </div>
+                        <% }) %>
+
+                            <br>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+    </body>
+
+    <%- include ('./partials/footer.ejs') %>

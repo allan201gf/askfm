@@ -1,0 +1,130 @@
+:root {
+    --background: rgb(29, 29, 29);
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.15%;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    background-color: var(--background);
+}
+
+.section {
+    min-height: 100vh;
+    background-color: var(--background);
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.main-content {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a h1 {
+    margin: 0;
+    font-size: 5rem;
+    color: #ea8685;
+}
+
+.card {
+    max-width: 60rem;
+    background-color: rgb(241, 241, 241);
+    border-radius: 1rem;
+    color: black;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    max-width: 40rem;
+}
+
+.card-title h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--background);
+}
+
+.card-description {
+    font-size: 1rem;
+    margin: 25px;
+}
+
+.button {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.button-l {
+    font-size:1.5rem;
+    width:140px;
+    height:50px;
+    border-width:0px;
+    color:#fff;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    background:#ffbe76;
+  }
+
+  .button-l:hover {
+    background: #ff7979;
+  }
+
+.form-title {
+    display: flex;
+    width: 100%;
+    height: 1.5rem;
+}
+
+.form-description {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+.resposta {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.resposta p {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.descricao {
+    font-size: 1rem;
+}
+
+.margin {
+    margin: 10px 0 0 0;
+}
